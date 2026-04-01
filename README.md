@@ -1,30 +1,40 @@
-🌐 Personal Portfolio Website
+# 🌐 Personal Portfolio Website
 
 This is my personal portfolio website built to showcase my projects, skills, and experience in web development and technology.
 
-🚀 About Me
-Hi, I'm Debanjan Santra — a Computer Science and Engineering student passionate about building impactful tech products and exploring both tech and business domains.
+---
 
-🛠️ Tech Stack
+## 🚀 About Me
 
-HTML5
+Hi, I'm **Debanjan Santra** — a Computer Science and Engineering student passionate about building impactful tech products and exploring both tech and business domains.
 
-CSS3
+---
 
-JavaScript
+## 🛠️ Tech Stack
 
-✨ Features
+- HTML5  
+- CSS3  
+- JavaScript  
 
-👨‍💻 Projects showcase section
+---
 
-📄 Resume download option
+## ✨ Features
 
-📬 Contact form / social links
+- 👨‍💻 Projects showcase section  
+- 📄 Resume download option  
+- 📬 Contact form / social links  
+- 🎯 Clean and responsive UI  
+- ⚡ Fast loading and optimized performance  
 
-🎯 Clean and responsive UI
+---
 
-⚡ Fast loading and optimized performance
+## 🌍 Live Demo
 
-🌍 Live Demo
+👉 [Click here to view the website](https://debanjansantra05.github.io/Portfolio_Website/)
 
-Click here to view the website : https://debanjansantra05.github.io/Portfolio_Website/
+---
+
+## 📸 Preview
+
+![Portfolio Preview](https://via.placeholder.com/800x400.png?text=Portfolio+Preview)
+
