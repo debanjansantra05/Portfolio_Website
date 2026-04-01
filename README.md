@@ -31,10 +31,3 @@ Hi, I'm **Debanjan Santra** — a Computer Science and Engineering student passi
 ## 🌍 Live Demo
 
 👉 [Click here to view the website](https://debanjansantra05.github.io/Portfolio_Website/)
-
----
-
-## 📸 Preview
-
-![Portfolio Preview](https://via.placeholder.com/800x400.png?text=Portfolio+Preview)
-
