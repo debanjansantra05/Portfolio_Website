@@ -45,7 +45,7 @@ nav ul li a {
 
 /* EDUCATION */
 .education-section {
-    margin-top: 100px;
+    margin-top: 90px; /* adjusted for header */
     padding: 50px 20px;
     text-align: center;
 }
@@ -62,14 +62,14 @@ nav ul li a {
     margin: auto;
 }
 
-/* CENTER LINE */
+/* CENTER LINE (FIXED) */
 .timeline::after {
     content: '';
     position: absolute;
     width: 3px;
     background: #ccc;
-    top: 100px;
-    bottom: 100px;
+    top: 0;              /* ✅ FIX */
+    bottom: 0;           /* ✅ FIX */
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
@@ -130,8 +130,8 @@ nav ul li a {
 
     .timeline::after {
         left: 30px;
-        top: 30px;
-        bottom: 30px;
+        top: 0;        /* ✅ FIX */
+        bottom: 0;     /* ✅ FIX */
     }
 
     .timeline-item {
