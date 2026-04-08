@@ -1,3 +1,7 @@
+:root {
+    --dot-size: 15px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -45,7 +49,7 @@ nav ul li a {
 
 /* EDUCATION */
 .education-section {
-    margin-top: 90px; /* adjusted for header */
+    margin-top: 90px;
     padding: 50px 20px;
     text-align: center;
 }
@@ -62,14 +66,16 @@ nav ul li a {
     margin: auto;
 }
 
-/* CENTER LINE (FIXED) */
+/* CENTER LINE (PERFECT ALIGNMENT) */
 .timeline::after {
     content: '';
     position: absolute;
     width: 3px;
     background: #ccc;
-    top: 0;              /* ✅ FIX */
-    bottom: 0;           /* ✅ FIX */
+
+    top: calc(var(--dot-size) / 2);
+    bottom: calc(var(--dot-size) / 2);
+
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
@@ -79,7 +85,7 @@ nav ul li a {
 .timeline-item {
     position: relative;
     width: 50%;
-    padding: 40px 20px;
+    padding: 30px 20px;
 }
 
 /* LEFT */
@@ -105,8 +111,8 @@ nav ul li a {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 15px;
-    height: 15px;
+    width: var(--dot-size);
+    height: var(--dot-size);
     background: #00bcd4;
     border-radius: 50%;
     z-index: 2;
@@ -130,8 +136,8 @@ nav ul li a {
 
     .timeline::after {
         left: 30px;
-        top: 0;        /* ✅ FIX */
-        bottom: 0;     /* ✅ FIX */
+        top: calc(var(--dot-size) / 2);
+        bottom: calc(var(--dot-size) / 2);
     }
 
     .timeline-item {
