@@ -73,8 +73,8 @@ nav ul li a {
     width: 3px;
     background: #ccc;
 
-    top: calc(var(--dot-size) / 2);
-    bottom: calc(var(--dot-size) / 2);
+    top: 100px;
+    bottom: 100px;
 
     left: 50%;
     transform: translateX(-50%);
@@ -136,8 +136,8 @@ nav ul li a {
 
     .timeline::after {
         left: 30px;
-        top: calc(var(--dot-size) / 2);
-        bottom: calc(var(--dot-size) / 2);
+        top: 120px;
+        bottom: 115px;
     }
 
     .timeline-item {
