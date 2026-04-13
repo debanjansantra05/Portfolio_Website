@@ -6,6 +6,7 @@
 }
 
 /* HEADER */
+
 header {
     position: fixed;
     width: 100%;
@@ -46,6 +47,7 @@ nav ul li a {
 }
 
 /* HERO */
+
 .hero {
     height: 100vh;
     position: relative;
@@ -70,7 +72,7 @@ nav ul li a {
     opacity: 1;
 }
 
-/* HERO TEXT FIXED */
+/* HERO TEXT */
 .hero-text {
     position: absolute;
     top: 50%;
@@ -83,7 +85,57 @@ nav ul li a {
     color: white;
 }
 
+/* MARQUEE SECTION */
+
+.marquee-section {
+    padding: 50px 0;
+    background: white;
+    text-align: center;
+}
+
+.marquee-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    background: #f8f9fa;
+    padding: 20px 0;
+}
+
+/* TRACK */
+.marquee-track {
+    display: flex;
+    width: max-content;
+    animation: scroll 15s linear infinite;
+}
+
+/* CONTENT */
+.marquee-content {
+    display: flex;
+}
+
+/* LOGOS */
+.marquee-content img {
+    height: 60px;
+    margin-right: 60px; /* consistent spacing */
+    object-fit: contain;
+}
+
+/* 🔥 CRITICAL FIX (NO GAP GUARANTEED) */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-100% / 2));
+    }
+}
+
 /* INFO SECTION */
+
 .info-section {
     padding: 100px 20px;
     background: white;
@@ -102,9 +154,7 @@ nav ul li a {
     border-radius: 10px;
 }
 
-/* ------------------ */
-/* 🔥 RESPONSIVENESS */
-/* ------------------ */
+/* RESPONSIVENESS */
 
 /* TABLET */
 @media (max-width: 900px) {
