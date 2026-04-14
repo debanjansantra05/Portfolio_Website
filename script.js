@@ -55,3 +55,4 @@ if (marquee) {
         marquee.style.animationPlayState = "running";
     });
 }
+
