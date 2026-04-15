@@ -1,6 +1,35 @@
+// WAIT FOR PAGE LOAD
+window.addEventListener("DOMContentLoaded", () => {
+
+    const hero = document.querySelector(".hero");
+    const about = document.querySelector(".about-section");
+
+    function handleScroll() {
+
+        // HERO FADE
+        if (window.scrollY > 100) {
+            hero.classList.add("scrolled");
+        } else {
+            hero.classList.remove("scrolled");
+        }
+
+        // ABOUT REVEAL
+        const aboutTop = about.getBoundingClientRect().top;
+
+        if (aboutTop < window.innerHeight - 100) {
+            about.classList.add("show");
+        }
+    }
+
+    // RUN ON LOAD
+    handleScroll();
+
+    // RUN ON SCROLL
+    window.addEventListener("scroll", handleScroll);
+});
+
 
 // NAVBAR SCROLL EFFECT
-
 window.addEventListener("scroll", function () {
     const navbar = document.getElementById("navbar");
 
@@ -14,8 +43,7 @@ window.addEventListener("scroll", function () {
 });
 
 
-// MOBILE MENU TOGGLE
-
+// MOBILE MENU
 const toggle = document.getElementById("menu-toggle");
 const nav = document.getElementById("nav-menu");
 
@@ -27,7 +55,6 @@ if (toggle && nav) {
 
 
 // IMAGE SLIDER
-
 const slides = document.querySelectorAll(".slide");
 let index = 0;
 
@@ -42,8 +69,7 @@ function changeSlide() {
 setInterval(changeSlide, 5000);
 
 
-// MARQUEE HOVER CONTROL
-
+// MARQUEE CONTROL
 const marquee = document.getElementById("marqueeTrack");
 
 if (marquee) {
@@ -55,4 +81,3 @@ if (marquee) {
         marquee.style.animationPlayState = "running";
     });
 }
-
