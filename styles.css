@@ -43,7 +43,7 @@ nav ul li a {
     text-decoration: none;
 }
 
-/* FIX: MENU TOGGLE */
+/* MENU TOGGLE */
 .menu-toggle {
     display: none;
     font-size: 28px;
@@ -190,7 +190,8 @@ nav ul li a {
         display: block;
         position: absolute;
         right: 30px;
-        top: 18px;
+        top: 50%;
+        transform: translateY(-50%);
     }
 
     /* HIDE NAV INITIALLY */
