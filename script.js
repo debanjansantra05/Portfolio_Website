@@ -81,3 +81,6 @@ if (marquee) {
         marquee.style.animationPlayState = "running";
     });
 }
+
+// FOOTER 
+document.getElementById("year").textContent = new Date().getFullYear();
