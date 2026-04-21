@@ -505,11 +505,14 @@ nav ul li a {
         align-items: center;
         justify-content: center;
         position: relative;
-        padding: 0 10px;
+        padding: 10px 60px; 
     }
 
     .footer-left {
+        position: absolute; 
         left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
     }
 
     .clock-box {
@@ -530,6 +533,8 @@ nav ul li a {
         text-align: center;
         width: 100%;
         line-height: 1.4;
+        padding: 0 40px;  
+        box-sizing: border-box;
     }
 
     .copyright span.break {
