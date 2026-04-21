@@ -48,14 +48,6 @@ nav ul li a {
 }
 
 
-/* MOBILE MENU */
-.menu-toggle {
-    display: none;
-    font-size: 26px;
-    color: white;
-    cursor: pointer;
-}
-
 /* HERO SECTION */
 .hero {
     height: 60vh;
@@ -240,14 +232,34 @@ nav ul li a {
 }
 
 /* MOBILE */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
 
-    /* NAV */
+    /* SHOW MENU ICON */
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        right: 30px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    /* HIDE NAV INITIALLY */
     nav {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: black;
+        width: 100%;
         display: none;
     }
 
-    .menu-toggle {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    nav.active {
         display: block;
     }
 
@@ -302,7 +314,7 @@ nav ul li a {
     }
 
     nav ul {
-        gap: 10px;
+        gap: 30px;
     }
 
     .info-block p {

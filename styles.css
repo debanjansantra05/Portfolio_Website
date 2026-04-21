@@ -478,13 +478,14 @@ nav ul li a {
 
     .footer-container {
         position: relative;
-        padding: 12px 10px;
+        padding: 12px 0px;
         min-height: 80px;
+        
     }
 
     .footer-left {
     position: absolute;
-    left: 10px;
+    left: 0px;
     top: 50%;
     transform: translateY(-50%); 
 }
